@@ -5,3 +5,26 @@
   border-color: grey;
   margin: 1px;
 }
+
+.palette{
+  display: inline;
+  float: right;
+}
+.red {
+  background-color: red;
+}
+.blue{
+  background-color: blue;
+}
+.orange{
+  background-color: orange;
+}
+.yellow{
+  background-color: yellow;
+}
+.green{
+  background-color: green;
+}
+.purple{
+  background-color: purple;
+}
