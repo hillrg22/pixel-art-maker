@@ -1,0 +1,7 @@
+.pixel {
+  height: 15px;
+  width: 15px;
+  border-style:solid;
+  border-color: grey;
+  margin: 1px;
+}
