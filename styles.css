@@ -5,10 +5,17 @@
   border-color: grey;
   margin: 1px;
 }
+.container div{
+  /* display: inline;
+  float: left; */
+}
 
 .palette{
+  margin-top: 3em;
+}
+.palette div{
   display: inline;
-  float: right;
+  float: left;
 }
 .red {
   background-color: red;
@@ -27,4 +34,8 @@
 }
 .purple{
   background-color: purple;
+}
+
+.pink{
+  background-color: pink;
 }
