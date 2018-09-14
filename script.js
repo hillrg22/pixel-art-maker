@@ -11,17 +11,22 @@ for(let i=0; i< colorPicks.length; i++){
   div.classList= "";
   div.classList.add("pixel");
   div.classList.add(colorPicks[i]);
-  // console.log("color picks", colorPicks[i])
 }
 
 //create divs for canvas
-for(let i=0; i<400; i++){
-  let div = document.createElement("div")
-  container.appendChild(div);
-  div.classList = "";
-  div.classList.add("pixel");
 
-}
+  var pixelTotal = 0
+  for(let i=0; i<400; i++){
+    let div = document.createElement("div")
+    container.appendChild(div);
+    div.classList = "";
+    div.classList.add("pixel");
+    div.addEventListener("click", clickPixel)
+    div.addEventListener("mouseover", paintbrush)
+    pixelTotal += 1
+  }
+
+
 
 
 //select currentColor
@@ -29,16 +34,27 @@ palette.addEventListener('click', colorSelect)
 
 function colorSelect(event){
   currentColor = event.target.classList[1]
-  // console.log(event.target)
-  // console.log("Class name", event.target.classList[1], currentColor)
+
 }
 
-
-
-//select pixel
+//color pixel on the canvas
+var isPainting = false
 function clickPixel(event){
-  // console.log(event.target)
-  // console.log(event)
   event.target.style.backgroundColor = currentColor
+  if(isPainting === false){
+    isPainting = true
+  }
+  else if(isPainting === true){
+    isPainting = false
+  }
 }
-container.addEventListener('click', clickPixel)
+
+//drag and draw (paintbrush)
+function paintbrush(event){
+  //if mouse clicked, color any divs mouse passes over until mouse is clicked
+  //again
+  if(isPainting == true){
+    event.target.style.backgroundColor = currentColor
+
+  }
+}
