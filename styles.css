@@ -5,9 +5,12 @@
   border-color: grey;
   margin: 1px;
 }
-.container div{
-  /* display: inline;
-  float: left; */
+.container{
+  margin-top: 33vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .palette{

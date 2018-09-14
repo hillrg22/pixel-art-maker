@@ -11,7 +11,7 @@ for(let i=0; i< colorPicks.length; i++){
   div.classList= "";
   div.classList.add("pixel");
   div.classList.add(colorPicks[i]);
-  console.log("color picks", colorPicks[i])
+  // console.log("color picks", colorPicks[i])
 }
 
 //select currentColor
@@ -19,15 +19,15 @@ palette.addEventListener('click', colorSelect)
 
 function colorSelect(event){
   currentColor = event.target.classList[1]
-  console.log("Class name", event.target.classList[1], currentColor)
+  // console.log("Class name", event.target.classList[1], currentColor)
 }
 
 
 
 //select pixel
 function clickPixel(event){
-  console.log(event.target)
-  console.log(event)
+  // console.log(event.target)
+  // console.log(event)
   event.target.style.backgroundColor = currentColor
 }
 container.addEventListener('click', clickPixel)
