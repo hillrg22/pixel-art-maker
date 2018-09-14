@@ -15,7 +15,6 @@ for(let i=0; i< colorPicks.length; i++){
 
 //create divs for canvas
 
-  var pixelTotal = 0
   for(let i=0; i<400; i++){
     let div = document.createElement("div")
     container.appendChild(div);
@@ -23,7 +22,6 @@ for(let i=0; i< colorPicks.length; i++){
     div.classList.add("pixel");
     div.addEventListener("click", clickPixel)
     div.addEventListener("mouseover", paintbrush)
-    pixelTotal += 1
   }
 
 
