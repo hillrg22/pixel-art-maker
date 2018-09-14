@@ -6,15 +6,21 @@
   margin: 1px;
 }
 .container{
-  margin-top: 33vh;
+  margin-top: 15vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
   display: flex;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  height: 50vh;
+  width: 60vw;
 }
 
 .palette{
   margin-top: 3em;
+  margin-bottom: 3em;
 }
 .palette div{
   display: inline;
