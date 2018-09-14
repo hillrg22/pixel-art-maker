@@ -2,7 +2,7 @@ var container = document.querySelector('.container')
 var pixel = document.querySelector('.pixel')
 var currentColor = ''
 var palette = document.querySelector('.palette')
-var colorPicks = ['red', 'blue', 'orange' , 'yellow', 'green', 'purple']
+var colorPicks = ['red', 'blue', 'orange' , 'yellow', 'green', 'purple', 'brown', 'grey', 'black', 'white']
 
 //create divs w/ color options
 for(let i=0; i< colorPicks.length; i++){
