@@ -8,20 +8,20 @@ var colorPicks = ['red', 'blue', 'orange' , 'yellow', 'green', 'purple', 'brown'
 for(let i=0; i< colorPicks.length; i++){
   let div = document.createElement('div')
   palette.appendChild(div);
-  div.classList= "";
-  div.classList.add("pixel");
+  div.classList= '';
+  div.classList.add('pixel');
   div.classList.add(colorPicks[i]);
 }
 
 //create divs for canvas
 
   for(let i=0; i<400; i++){
-    let div = document.createElement("div")
+    let div = document.createElement('div')
     container.appendChild(div);
-    div.classList = "";
-    div.classList.add("pixel");
-    div.addEventListener("click", clickPixel)
-    div.addEventListener("mouseover", paintbrush)
+    div.classList = '';
+    div.classList.add('pixel');
+    div.addEventListener('click', clickPixel)
+    div.addEventListener('mouseover', paintbrush)
   }
 
 
