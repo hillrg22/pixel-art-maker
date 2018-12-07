@@ -36,23 +36,7 @@ function colorSelect(event){
 }
 
 //color pixel on the canvas
-var isPainting = false
+
 function clickPixel(event){
   event.target.style.backgroundColor = currentColor
-  if(isPainting === false){
-    isPainting = true
-  }
-  else if(isPainting === true){
-    isPainting = false
-  }
-}
-
-//drag and draw (paintbrush)
-function paintbrush(event){
-  //if mouse clicked, color any divs mouse passes over until mouse is clicked
-  //again
-  if(isPainting == true){
-    event.target.style.backgroundColor = currentColor
-
-  }
 }
