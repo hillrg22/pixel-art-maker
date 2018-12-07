@@ -15,13 +15,12 @@ for(let i=0; i< colorPicks.length; i++){
 
 //create divs for canvas
 
-  for(let i=0; i<400; i++){
+  for(let i=0; i<405; i++){
     let div = document.createElement('div')
     container.appendChild(div);
     div.classList = '';
     div.classList.add('pixel');
     div.addEventListener('click', clickPixel)
-    div.addEventListener('mouseover', paintbrush)
   }
 
 
